@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: eiin-teacher-search-api
+    runtime: docker
+    plan: free
+    healthCheckPath: /api/health
+    envVars:
+      - key: ALLOWED_ORIGINS
+        value: "*"
